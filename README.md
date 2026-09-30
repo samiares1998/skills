@@ -1,7 +1,8 @@
 # Invocar flujos usando lenguaje natural en Codex
 
 Este documento contiene ejemplos para usar los procedimientos de `skills`
-desde Codex sin memorizar comandos específicos.
+desde Codex sin memorizar comandos específicos.Se debe configurar un MCP
+para jira y para todos los repos del bo
 
 ## Refinar o desafiar una historia
 
