@@ -16,6 +16,7 @@
 - [ ] Seguir los lineamientos( se puede usar el siguiente skill en cursor solo es replicarlo en el repositoriohttps://gitlab.com/tenpo/development/customer-operations/backoffice-platform/tenpo-bank-orchestrator-dof/-/tree/uat/.cursor/skills/documentation?ref_type=heads) 
 - [ ] Colección de Bruno actualizada en /docs/bruno/ del repositorio
 - [ ] Guia de creacion nuevos repositorios : https://krealo.atlassian.net/wiki/spaces/Ingeniera/pages/5574164481/Gu+a+para+la+Creaci+n+y+Organizaci+n+de+Repositorios+del+Back+Office+en+GitLab 
+- [ ] Guia documentacion : https://krealo.atlassian.net/wiki/spaces/Ingeniera/pages/5182521365/Lineamientos+entrega+de+nuevos+desarrollos+y+o+endpoints 
 
 
 ## Consideraciones técnicas

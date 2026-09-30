@@ -30,6 +30,26 @@ crees tareas nuevas y no modifiques Jira.
 [pegar aquí la historia o indicar la clave/URL de Jira]
 ```
 
+## Generar descripciones técnicas de tareas existentes
+
+```text
+Usa el skill task-description para redactar la descripción de estas tareas Jira
+a partir de la HU indicada. Consulta Codebase Memory para verificar servicios,
+endpoints, clases, tablas, eventos y dependencias reales cuando corresponda.
+Entrega un bloque por tarea usando exactamente templates/task-template.md.
+No crees tareas nuevas, no dividas la HU y no modifiques Jira.
+
+HU:
+[clave o URL de la HU]
+
+Tareas existentes:
+[claves, URLs o títulos de las tareas]
+
+Nombre de los repositorios involucrados:
+[nombres]
+
+```
+
 ## Analizar y preparar una deuda técnica
 
 ```text
@@ -96,6 +116,38 @@ contratos, persistencia y errores. Incluye un diagrama Mermaid cuando aplique.
 [describir aquí el flujo o indicar el endpoint/evento inicial]
 ```
 
+## Migrar una configuración estática a Dinamic Locks
+
+```text
+Migra la siguiente configuración estática a Dinamic Locks usando
+prompts/dynamic-locks.md.
+
+Consulta el código real del repositorio y separa hechos observados, supuestos y
+preguntas pendientes. Usa el endpoint por perfil y categoría:
+
+GET /lock-options/dinamic/profile/{profileCode}/category/{categoryCode}/option
+
+Los estados deben salir de actionOption.code, no de metadata. Mantén separados
+los adaptadores de cada módulo, por ejemplo LBTR y Vale Vista. Si implementas el
+cambio, agrega pruebas y reporta las validaciones. No modifiques Jira, GitLab o
+Confluence.
+
+Repositorio:
+[nombre o ruta del repositorio]
+
+Módulo o archivo:
+[ruta, componente, hook o función]
+
+Configuración estática actual:
+[pegar código o describirla]
+
+Categoría dinámica:
+[por ejemplo LBTR o VALE_VISTA]
+
+Perfiles involucrados:
+[códigos de perfil]
+```
+
 ## Crear o actualizar un ADR
 
 ```text
@@ -107,19 +159,6 @@ supuestos, alternativas y decisión propuesta. No inventes contexto faltante.
 [describir aquí la decisión]
 ```
 
-## Ejecutar la instalación global
-
-```text
-Ejecuta ./install/install-global.sh --dry-run y explícame qué cambiaría.
-No ejecutes la instalación definitiva todavía.
-```
-
-Después de revisar el resultado:
-
-```text
-Ejecuta la instalación global que acabas de mostrar y reporta los archivos
-enlazados, las colisiones y los MCP que queden pendientes.
-```
 
 ## Regla de seguridad
 
