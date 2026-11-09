@@ -31,25 +31,7 @@ crees tareas nuevas y no modifiques Jira.
 [pegar aquí la historia o indicar la clave/URL de Jira]
 ```
 
-## Generar descripciones técnicas de tareas existentes
 
-```text
-Usa el skill task-description para redactar la descripción de estas tareas Jira
-a partir de la HU indicada. Consulta Codebase Memory para verificar servicios,
-endpoints, clases, tablas, eventos y dependencias reales cuando corresponda.
-Entrega un bloque por tarea usando exactamente templates/task-template.md.
-No crees tareas nuevas, no dividas la HU y no modifiques Jira.
-
-HU:
-[clave o URL de la HU]
-
-Tareas existentes:
-[claves, URLs o títulos de las tareas]
-
-Nombre de los repositorios involucrados:
-[nombres]
-
-```
 
 ## Analizar y preparar una deuda técnica
 
@@ -74,6 +56,26 @@ Ubicación:
 
 HU/épica relacionada, si existe:
 [pegar clave o URL]
+```
+
+## Generar descripciones técnicas de tareas existentes
+
+```text
+Usa el skill task-description para redactar la descripción de estas tareas Jira
+a partir de la HU indicada. Consulta Codebase Memory para verificar servicios,
+endpoints, clases, tablas, eventos y dependencias reales cuando corresponda.
+Entrega un bloque por tarea usando exactamente templates/task-template.md.
+No crees tareas nuevas, no dividas la HU y no modifiques Jira.
+
+HU:
+[clave o URL de la HU]
+
+Tareas existentes:
+[claves, URLs o títulos de las tareas]
+
+Nombre de los repositorios involucrados:
+[nombres]
+
 ```
 
 ## Revisar una rama local
@@ -149,25 +151,3 @@ Perfiles involucrados:
 [códigos de perfil]
 ```
 
-## Crear o actualizar un ADR
-
-```text
-Prepara un ADR usando prompts/adr.md para esta decisión arquitectónica.
-
-Investiga primero el estado real del código y separa hechos observados,
-supuestos, alternativas y decisión propuesta. No inventes contexto faltante.
-
-[describir aquí la decisión]
-```
-
-
-## Regla de seguridad
-
-Para Jira, GitLab o Confluence, Codex debe preparar primero el resultado y
-esperar confirmación explícita antes de crear, modificar, comentar o publicar
-información externamente.
-
-Si falta información de producto, negocio o arquitectura, debe indicarlo como
-pregunta pendiente en lugar de completarla inventando.
-
-```
